@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>
+        Harmain's Website
+       </title>
+       <link rel="icon" type="image/x-icon" href="logo.png">
+
+       <style>
+         /* From here our CSS code starts */
+         ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #419dad;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #000000;
+}
+
+li a.active {
+  color: rgb(57, 107, 216);
+  background-color: #04AA6D;
+}
+
+       </style>
+        
+    </head>
+</html>
+<body style="background-image: linear-gradient(to right, rgb(0, 89, 255) , rgb(0, 255, 21));">
+    <ul>
+        <li><a href="harmain.html">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    <h1>
+        Harmain Awan Website
+    </h1>
+<h2>
+    I am Harmain Awan and I will teach you about tiger.
+</h2>
+<p>
+    The tiger, known scientifically as Panthera tigris, is one of the most iconic and majestic creatures in the animal kingdom. Native to Asia, this powerful predator is renowned for its striking orange coat with black stripes, which provides both camouflage and a distinctive appearance. Tigers are solitary hunters with a vast range, from the tropical forests of India to the snowy expanses of Siberia. As apex predators, they play a crucial role in maintaining the balance of their ecosystems. Despite their grandeur, tigers face numerous threats from habitat loss and poaching, making their conservation a critical priority for preserving biodiversity.
+</p>
+<img src="pic1.jpg" alt="tiger" width="300" height="300" >
+
+<h1>JavaScript</h1>
+
+  <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+</body>
